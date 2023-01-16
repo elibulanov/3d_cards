@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+  
+// Importing loader
+import PacmanLoader from "react-spinners/PacmanLoader";
+import ClockLoader from "react-spinners/ClockLoader";
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import LoadingScreen from './components/loading';
+  
+const App = () => {
+  
+  
+  
+  return <LoadingScreen/>
+  
+   
 }
-
+  
 export default App;
